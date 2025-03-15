@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoTrader Clone</string>
+    <string name="browse_cars">Browse Cars</string>
+    <string name="compare_cars">Compare Cars</string>
+    <string name="car_details">Car Details</string>
+    <string name="add_to_comparison">Add to Comparison</string>
+    <string name="performance">Performance</string>
+    <string name="features">Features</string>
+    <string name="safety">Safety</string>
+    <string name="horsepower">Horsepower</string>
+    <string name="torque">Torque</string>
+    <string name="acceleration">0-60 mph</string>
+    <string name="fuel_efficiency">Fuel Efficiency</string>
+    <string name="price">Price</string>
+    <string name="mileage">Mileage</string>
+    <string name="compare">Compare</string>
+    <string name="select_cars">Select Cars to Compare</string>
+</resources>
