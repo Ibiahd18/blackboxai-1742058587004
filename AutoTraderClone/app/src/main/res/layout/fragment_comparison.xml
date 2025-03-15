@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Car Headers -->
+        <LinearLayout
+            android:id="@+id/layout_car_headers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!-- Spec Label Column -->
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <!-- Car Columns (will be added dynamically) -->
+            <LinearLayout
+                android:id="@+id/layout_car_columns"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Comparison Table -->
+        <LinearLayout
+            android:id="@+id/layout_comparison_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Rows will be added dynamically -->
+
+        </LinearLayout>
+
+        <!-- Template for a comparison row (will be used programmatically) -->
+        <LinearLayout
+            android:id="@+id/template_comparison_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <!-- Spec Label -->
+            <TextView
+                android:id="@+id/tv_spec_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TextAppearance.CarSpec"
+                tools:text="Horsepower"/>
+
+            <!-- Values Container -->
+            <LinearLayout
+                android:id="@+id/layout_spec_values"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"/>
+
+        </LinearLayout>
+
+        <!-- Template for a car column header (will be used programmatically) -->
+        <LinearLayout
+            android:id="@+id/template_car_column"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_car_image"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:background="@color/primary_light"/>
+
+            <TextView
+                android:id="@+id/tv_car_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                style="@style/TextAppearance.CarTitle"
+                android:textSize="14sp"
+                tools:text="2023 Tesla Model 3"/>
+
+            <TextView
+                android:id="@+id/tv_car_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                style="@style/TextAppearance.CarPrice"
+                android:textSize="12sp"
+                tools:text="$45,990"/>
+
+        </LinearLayout>
+
+        <!-- Template for a spec value (will be used programmatically) -->
+        <TextView
+            android:id="@+id/template_spec_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            style="@style/TextAppearance.CarSpec"
+            android:visibility="gone"
+            tools:text="283 hp"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
