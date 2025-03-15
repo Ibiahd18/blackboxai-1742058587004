@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Comparison Types -->
+    <string name="comparison_type_performance">Performance</string>
+    <string name="comparison_type_features">Features</string>
+    <string name="comparison_type_safety">Safety</string>
+
+    <!-- Performance Metrics -->
+    <string name="metric_horsepower">Horsepower</string>
+    <string name="metric_torque">Torque</string>
+    <string name="metric_acceleration">0-60 mph</string>
+    <string name="metric_fuel_efficiency">Fuel Efficiency</string>
+
+    <!-- Units -->
+    <string name="unit_horsepower">hp</string>
+    <string name="unit_torque">lb-ft</string>
+    <string name="unit_seconds">s</string>
+    <string name="unit_mpg">MPG</string>
+
+    <!-- Comparison UI -->
+    <string name="comparison_header">Vehicle Comparison</string>
+    <string name="comparison_specification">Specification</string>
+    <string name="comparison_better">Better</string>
+    <string name="comparison_worse">Worse</string>
+    <string name="comparison_equal">Equal</string>
+    <string name="comparison_not_available">N/A</string>
+
+    <!-- Actions -->
+    <string name="action_share_comparison">Share Comparison</string>
+    <string name="action_clear_comparison">Clear Comparison</string>
+    <string name="action_add_vehicle">Add Vehicle</string>
+    <string name="action_remove_vehicle">Remove Vehicle</string>
+
+    <!-- Messages -->
+    <string name="msg_comparison_list_full">Cannot add more vehicles to comparison</string>
+    <string name="msg_comparison_list_empty">No vehicles selected for comparison</string>
+    <string name="msg_vehicle_added">Vehicle added to comparison</string>
+    <string name="msg_vehicle_removed">Vehicle removed from comparison</string>
+    <string name="msg_min_vehicles_required">Select at least 2 vehicles to compare</string>
+    <string name="msg_max_vehicles_allowed">Maximum %d vehicles can be compared</string>
+
+    <!-- Share -->
+    <string name="share_comparison_title">Share Vehicle Comparison</string>
+    <string name="share_comparison_subject">Vehicle Comparison Details</string>
+    <string name="share_via">Share via</string>
+
+    <!-- Format Strings -->
+    <string name="format_horsepower">%d hp</string>
+    <string name="format_torque">%d lb-ft</string>
+    <string name="format_acceleration">%.1fs</string>
+    <string name="format_fuel_efficiency">%.1f MPG</string>
+    <string name="format_price">$%,.2f</string>
+    <string name="format_full_name">%d %s %s</string>
+</resources>
