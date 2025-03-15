@@ -1,0 +1,3 @@
+rootProject.name = "AutoTraderClone"
+include ':app'
+include ':carcomparison'
