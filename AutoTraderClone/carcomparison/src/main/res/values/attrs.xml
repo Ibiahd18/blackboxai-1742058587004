@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VehicleComparisonView">
+        <attr name="comparisonType" format="enum">
+            <enum name="performance" value="0"/>
+            <enum name="features" value="1"/>
+            <enum name="safety" value="2"/>
+        </attr>
+        <attr name="betterValueColor" format="color"/>
+        <attr name="worseValueColor" format="color"/>
+        <attr name="neutralValueColor" format="color"/>
+    </declare-styleable>
+</resources>
